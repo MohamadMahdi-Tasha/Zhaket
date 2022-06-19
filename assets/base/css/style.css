@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 /*Making Some Styles To Body*/
@@ -24,6 +25,10 @@ button {cursor: pointer;}
 .dv-first-section-inner-gradiant {background: linear-gradient(to bottom, rgba(2, 149, 206, .5), rgba(3, 162, 203, .5), rgba(2, 158, 203, 1));}
 .ml-1 {margin-left: 1rem;}
 .ml-2 {margin-left: 2rem;}
+.transition {transition: .3s;}
+.pointer-event-none {pointer-events: none;}
+.dv-header-link:hover {color: #9ae7ff !important;}
+
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
     background-size: cover;
