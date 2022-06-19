@@ -14,6 +14,7 @@ body {
     font-size: 13px !important;
     font-family: IranianSans, sans-serif !important;
     scroll-behavior: smooth;
+    font-weight: normal;
 }
 
 /*Styles*/
@@ -32,11 +33,13 @@ button {cursor: pointer;}
 .dv-header-list-item-btn:hover {background-color: #0295CE !important;color: white !important;}
 .dv-header-list-item-btn:active {background-color: #006c97 !important;color: white !important;}
 .dv-header-search-btn ~ input {width: 0;}
-.dv-header-search-btn ~ input::placeholder{color: white;}
-.dv-header-search-btn:focus {opacity: 0;pointer-events: none;}
-.dv-header-search-btn:focus ~ input, input:focus{opacity: 100% !important;width: 20%;pointer-events: visible !important}
+#dv-header-search-input::placeholder{color: white;}
 #dv-scroll-icon:hover svg{transform: translateY(5px);}
 .dv-header-search-btn:hover {transform: translateY(5px)}
+#dv-header-search-btn[data-opened='true'] {opacity: 100%;pointer-events: visible;}
+#dv-header-search-btn[data-opened='false'] {opacity: 0;pointer-events: none;}
+#dv-header-search-input[data-opened='true'] {opacity: 100% !important;width: 20% !important;pointer-events: visible !important;}
+#dv-header-search-input[data-opened='false'] {width: 0;opacity: 0;pointer-events: none;}
 
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
