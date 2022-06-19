@@ -24,14 +24,19 @@ button {cursor: pointer;}
 .dv-w-15 {width: 15%;}
 .dv-bg-none {background-color: unset;}
 .dv-first-section-inner-gradiant {background: linear-gradient(to bottom, rgba(2, 149, 206, .5), rgba(3, 162, 203, .5), rgba(2, 158, 203, 1));}
-.dv-ml-2 {margin-left: 2rem;}
+.dv-ml-1 {margin-left: 1rem;}
 .dv-transition {transition: .3s;}
 .dv-pointer-event-none {pointer-events: none;}
 .dv-header-link:hover {color: #9ae7ff !important;}
 .dv-header-link:hover ~ div, div:hover, div:first-of-type:hover {opacity: 1 !important;pointer-events: visible !important;}
 .dv-header-list-item-btn:hover {background-color: #0295CE !important;color: white !important;}
 .dv-header-list-item-btn:active {background-color: #006c97 !important;color: white !important;}
+.dv-header-search-btn ~ input {width: 0;}
+.dv-header-search-btn ~ input::placeholder{color: white;}
+.dv-header-search-btn:focus {opacity: 0;pointer-events: none;}
+.dv-header-search-btn:focus ~ input, input:focus{opacity: 100% !important;width: 20%;pointer-events: visible !important}
 #dv-scroll-icon:hover svg{transform: translateY(5px);}
+.dv-header-search-btn:hover {transform: translateY(5px)}
 
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
