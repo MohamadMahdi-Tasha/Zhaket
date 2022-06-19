@@ -15,6 +15,7 @@ body {
     font-family: IranianSans, sans-serif !important;
     scroll-behavior: smooth;
     font-weight: normal;
+    background-color: #F2F7FB;
 }
 
 /*Styles*/
@@ -44,6 +45,7 @@ button {cursor: pointer;}
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .dv-rahbari-quote:before {
@@ -63,4 +65,13 @@ button {cursor: pointer;}
     border-right: 10px solid transparent;
     border-bottom: 10px solid white;
     margin-right: 1rem;
+}
+
+#dv-header.dv-scrolled {
+    box-shadow:0 1rem 3rem rgba(0,0,0,.175);
+
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
 }
