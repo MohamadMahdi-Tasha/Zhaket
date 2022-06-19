@@ -31,6 +31,7 @@ button {cursor: pointer;}
 .dv-header-link:hover ~ div, div:hover {opacity: 1 !important;pointer-events: visible !important;}
 .dv-header-list-item-btn:hover {background-color: #0295CE !important;color: white !important;}
 .dv-header-list-item-btn:active {background-color: #006c97 !important;color: white !important;}
+#dv-scroll-icon:hover svg{transform: translateY(5px);}
 
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
