@@ -29,7 +29,7 @@ button {cursor: pointer;}
 .dv-transition {transition: .3s;}
 .dv-pointer-event-none {pointer-events: none;}
 .dv-header-link:hover {color: #9ae7ff !important;}
-.dv-header-link:hover ~ div, div:hover, div:first-of-type:hover {opacity: 1 !important;pointer-events: visible !important;}
+.dv-header-link:hover ~ div, div:hover, .dv-triangle {opacity: 1 !important;pointer-events: visible !important;}
 .dv-header-list-item-btn:hover {background-color: #0295CE !important;color: white !important;}
 .dv-header-list-item-btn:active {background-color: #006c97 !important;color: white !important;}
 .dv-header-search-btn ~ input {width: 0;}
