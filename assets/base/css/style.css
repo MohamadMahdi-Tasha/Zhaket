@@ -21,7 +21,7 @@ img {pointer-events: none;}
 button {cursor: pointer;}
 .dv-w-40 {width: 40%;}
 .dv-w-60 {width: 60%;}
-.dv-w-20 {width: 20%;}
+.dv-w-15 {width: 15%;}
 .dv-bg-none {background-color: unset;}
 .dv-first-section-inner-gradiant {background: linear-gradient(to bottom, rgba(2, 149, 206, .5), rgba(3, 162, 203, .5), rgba(2, 158, 203, 1));}
 .dv-ml-2 {margin-left: 2rem;}
