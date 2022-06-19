@@ -15,7 +15,7 @@ body {
     font-family: IranianSans, sans-serif !important;
     scroll-behavior: smooth;
     font-weight: normal;
-    background-color: #F2F7FB;
+    background-color: #029ecb !important;
 }
 
 /*Styles*/
@@ -41,11 +41,13 @@ button {cursor: pointer;}
 #dv-header-search-btn[data-opened='false'] {opacity: 0;pointer-events: none;}
 #dv-header-search-input[data-opened='true'] {opacity: 100% !important;width: 20% !important;pointer-events: visible !important;}
 #dv-header-search-input[data-opened='false'] {width: 0;opacity: 0;pointer-events: none;}
+.dv-text-dark-blue {color: #037FA2 !important;}
+.dv-text-gray {color: #707070 !important;}
+.dv-second-section-card:hover {box-shadow: 0 0 30px rgba(0,0,0,.3);transform: translateY(-5px);}
 
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .dv-rahbari-quote:before {
@@ -69,9 +71,20 @@ button {cursor: pointer;}
 
 #dv-header.dv-scrolled {
     box-shadow:0 1rem 3rem rgba(0,0,0,.175);
-
     background: rgba( 255, 255, 255, 0.15 );
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
     border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.dv-second-section {
+    background-image: url("../img/second-section/img-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.dv-second-section > main {
+    transform: translateY(100px);
 }
