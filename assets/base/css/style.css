@@ -155,8 +155,13 @@ button {cursor: pointer;}
     header > ul > li:first-of-type{display: block !important;}
     header > ul > li:not(:first-of-type){display: none !important;}
     .dv-first-section-inner-gradiant > div:first-of-type{width: 90% !important;}
-    .dv-third-section > main > div, .dv-third-section > main > img{width: 100% !important;}
-    .dv-third-section > main{
+    .dv-forth-section > main {flex-direction: column-reverse !important;}
+    .dv-third-section > main > div, .dv-third-section > main > img,
+    .dv-forth-section > main > div{width: 100% !important;}
+    .dv-forth-section > main > img {width: 100%;}
+    .dv-forth-section {min-height: 170rem !important;}
+    .dv-third-section > main,
+    .dv-forth-section > main{
         display: flex;
         flex-direction: column;
     }
@@ -176,12 +181,23 @@ button {cursor: pointer;}
 
 @media (max-width: 575px) {
     .dv-header-search-input[data-opened='false'] {background-color: red;}
+    .dv-fourth-sections-ul > li > div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px) {
     .dv-first-section-inner-gradiant > div:first-of-type  > div:first-of-type img {width: 60%;}
     .dv-first-section-inner-gradiant > div:first-of-type  > div:first-of-type svg {width: 60%;height: auto;}
-    
+
+    .dv-fourth-sections-ul {
+        display: flex;
+        grid-template-columns: none;
+    }
+
     .dv-third-section-right-side-items {
         display: flex;
         flex-direction: column !important;
