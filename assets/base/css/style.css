@@ -163,12 +163,8 @@ button {cursor: pointer;}
 }
 
 @media (max-width: 767px) {
-    #products-section  {
-        min-height: 120rem;
-    }
-    #products-section > main {
-        transform: translateY(90px);
-    }
+    #products-section  {min-height: 120rem;}
+    #products-section > main {transform: translateY(90px);}
     .dv-products-holder  {grid-template-columns: repeat(1, 1fr);}
 }
 
@@ -187,4 +183,10 @@ button {cursor: pointer;}
         gap: 2rem;
     }
 
+}
+
+@media (max-height: 467px) {
+    .dv-first-section > main > div{
+        margin-top: 10rem ;
+    }
 }
