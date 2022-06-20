@@ -150,7 +150,7 @@ button {cursor: pointer;}
 @media (max-width: 991px) {
     #dv-mobile-nav, #dv-mobile-nav-dark-bg {display: block !important;}
     #dv-header-search-input[data-opened='true'] {width: 50% !important;}
-    body > section:not(:first-of-type) {padding: 1.5rem !important;}
+    body > section:not(:first-of-type) {padding: 1rem !important;}
     header > ul {width: 10% !important;}
     header > div {width: 90% !important;}
     header > ul > li:first-of-type{display: block !important;}
@@ -164,7 +164,7 @@ button {cursor: pointer;}
     .dv-footer > main > div:last-of-type > ul{width: 75% !important;}
     .dv-footer > main > div:last-of-type {align-items: start !important;}
     .dv-forth-section > main > img {width: 100%;}
-    .dv-forth-section {min-height: 170rem !important;}
+    .dv-forth-section {min-height: 155rem !important;}
     .dv-footer > main {transform: translateY(70px);}
     .dv-footer > main > div:first-of-type {
         display: flex;
@@ -192,12 +192,13 @@ button {cursor: pointer;}
 }
 
 @media (max-width: 767px) {
-    #products-section  {min-height: 120rem;}
+    #products-section  {min-height: 115rem;}
     #products-section > main {transform: translateY(90px);}
     .dv-products-holder  {grid-template-columns: repeat(1, 1fr);}
 }
 
 @media (max-width: 575px) {
+    .dv-card-swiper {width: 80%;}
     .dv-header-search-input[data-opened='false'] {background-color: red;}
     .dv-fourth-sections-ul > li > div {
         display: flex;
