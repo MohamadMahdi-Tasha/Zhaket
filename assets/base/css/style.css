@@ -164,7 +164,7 @@ button {cursor: pointer;}
 
 @media (max-width: 767px) {
     #products-section  {
-        min-height: 140vh;
+        min-height: 120rem;
     }
     #products-section > main {
         transform: translateY(90px);
