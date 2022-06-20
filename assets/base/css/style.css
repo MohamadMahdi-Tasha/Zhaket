@@ -47,7 +47,20 @@ button {cursor: pointer;}
 .dv-fourth-sections-ul {grid-template-columns: repeat(2, 1fr);}
 .dv-forth-section {min-height: 140vh !important;}
 .dv-forth-section > main {transform: translateY(10%);}
-.dv-object-cover {object-fit: cover;}
+.dv-card-swiper {width: 346px;height: 455px;}
+.dv-text-blue {color: #0295CE;}
+.dv-bg-blue {background-color: #0295CE;}
+.dv-customer-link-btn:hover {background-color: #007aab;}
+.dv-customer-link-btn:active {background-color: #005f84;}
+.dv-card-swiper .swiper-pagination {transform: translateY(4rem);}
+.dv-card-swiper .swiper-pagination-bullet-active {background: white !important;}
+.dv-card-swiper .swiper-pagination-bullet {
+    background: unset;
+    border: 3px solid white !important;
+    opacity: 1 !important;
+    width: 12px;
+    height: 12px;
+}
 
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
