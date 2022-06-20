@@ -42,8 +42,13 @@ button {cursor: pointer;}
 .dv-text-dark-blue {color: #037FA2 !important;}
 .dv-text-gray {color: #707070 !important;}
 .dv-second-section-card:hover {box-shadow: 0 0 30px rgba(0,0,0,.3);transform: translateY(-5px);}
-.dv-bg-none-rectangular > main {transform: translateY(100px);}
+.dv-bg-none-rectangular > main {transform: translateY(20%);}
 #dv-scroll-icon:hover svg ,.dv-header-search-btn:hover {animation: hover-transform .7s infinite alternate;}
+.dv-fourth-sections-ul {grid-template-columns: repeat(2, 1fr);}
+.dv-forth-section {min-height: 140vh !important;}
+.dv-forth-section > main {transform: translateY(10%);}
+.dv-object-cover {object-fit: cover;}
+
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
     background-size: cover;
