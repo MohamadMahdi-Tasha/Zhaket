@@ -19,6 +19,11 @@ body {
     overflow-x: hidden !important;
 }
 
+/*Pages Scrollbar*/
+body::-webkit-scrollbar {background-color: white;width: 7px;}
+body::-webkit-scrollbar-thumb {border-radius: 50rem;background-color: #0295CE;}
+body::-webkit-scrollbar-button {display: none;}
+
 /*Styles*/
 #dv-header-search-input::placeholder{color: white;}
 #dv-header-search-btn[data-opened='true'] {opacity: 100%;pointer-events: visible;}
