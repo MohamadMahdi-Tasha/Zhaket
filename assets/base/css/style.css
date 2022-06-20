@@ -84,5 +84,10 @@ button {cursor: pointer;}
     min-height: 100vh;
 }
 
+.dv-third-section-right-side-items:hover {
+    background-color: #04B3C6;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+}
+
 /*Animations*/
 @keyframes hover-transform { 100% {transform: translateY(5px)} }
