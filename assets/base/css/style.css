@@ -117,16 +117,30 @@ button {cursor: pointer;}
     min-height: 400px;
 }
 
+.dv-nav-toggle-btn > button{border: 1px solid white;}
+.dv-nav-toggle-btn > button:active {background-color: white !important;color: #0295CE !important;}
+
 /*Animations*/
 @keyframes hover-transform { 100% {transform: translateY(5px)} }
 
 /*Media Query's*/
 @media (max-width: 991px) {
     .dv-first-section-inner-gradiant > div:first-of-type{width: 90% !important;}
+    header > ul {width: 10% !important;}
+    header > div {width: 90% !important;}
+    header > ul > li:first-of-type{display: block !important;}
+    header > ul > li:not(:first-of-type){display: none !important;}
+
     .dv-rahbari-quote {
         display: flex;
         justify-content: center;
         margin-bottom: 2rem !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .dv-header-search-input[data-opened='false'] {
+        background-color: red;
     }
 }
 
