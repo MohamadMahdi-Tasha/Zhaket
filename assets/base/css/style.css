@@ -25,6 +25,24 @@ body {
 #dv-header-search-input[data-opened='true'] {opacity: 100% !important;width: 20% !important;pointer-events: visible !important;}
 #dv-header-search-input[data-opened='false'] {width: 0;opacity: 0;pointer-events: none;}
 #dv-scroll-icon:hover svg ,.dv-header-search-btn:hover {animation: hover-transform .7s infinite alternate;}
+#dv-mobile-nav {z-index: 2000;background-color: #0295CE;}
+#dv-mobile-nav-dark-bg {background-color: rgba(0,0,0,.2);z-index: 1999;}
+#dv-mobile-nav-dark-bg[data-opened='false'] {right: -100% !important;}
+#dv-mobile-nav-dark-bg[data-opened='true'] {left: 50%;}
+#dv-mobile-nav[data-opened='false'] {right: -50%;}
+#dv-mobile-nav[data-opened='true'] {right: 0;}
+#dv-mobile-nav, #dv-mobile-nav-dark-bg {display: none !important;}
+.dv-mobile-nav-list-toggler[data-opened='false'] ~ ul{display: none !important;}
+.dv-mobile-nav-list-toggler[data-opened='true'] ~ ul{display: block;}
+.dv-mobile-nav-list-toggler[data-opened='true'] > span:last-of-type {transform: rotate(45deg)}
+.dv-nav-toggle-btn > button{border: 1px solid white;}
+.dv-nav-toggle-btn > button:active {background-color: white !important;color: #0295CE !important;}
+.dv-mobile-nav-list-toggler {background-color: #0295CE;}
+.dv-mobile-nav-list-toggler:active {background-color: #0084b5;}
+.dv-mobile-nav-list-toggler ~ ul button{background-color: #007cab;}
+.dv-mobile-nav-list-toggler ~ ul button:active{background-color: #006387;}
+.dv-scroll-hidden::-webkit-scrollbar {display: none;}
+.dv-scroll-hidden::-moz-viewport-scroll {display: none;}
 img {pointer-events: none;}
 button {cursor: pointer;}
 .dv-w-40 {width: 40%;}
@@ -117,9 +135,6 @@ button {cursor: pointer;}
     min-height: 400px;
 }
 
-.dv-nav-toggle-btn > button{border: 1px solid white;}
-.dv-nav-toggle-btn > button:active {background-color: white !important;color: #0295CE !important;}
-
 /*Animations*/
 @keyframes hover-transform { 100% {transform: translateY(5px)} }
 
@@ -130,6 +145,7 @@ button {cursor: pointer;}
     header > div {width: 90% !important;}
     header > ul > li:first-of-type{display: block !important;}
     header > ul > li:not(:first-of-type){display: none !important;}
+    #dv-mobile-nav, #dv-mobile-nav-dark-bg {display: block !important;}
 
     .dv-rahbari-quote {
         display: flex;
