@@ -26,16 +26,16 @@
 </head>
 <body dir="rtl">
 <!--nav Dark Bg-->
-<div id="dv-mobile-nav-dark-bg" class="w-100 h-100 fixed-top" data-opened="true"></div>
+<div id="dv-mobile-nav-dark-bg" class="w-100 dv-transition h-100 fixed-top" data-opened="false"></div>
 <!--Nav (Mobile Only)-->
-<nav class="position-fixed w-50 dv-transition shadow-lg h-100 overflow-scroll dv-scroll-hidden" id="dv-mobile-nav" data-opened="true">
+<nav class="position-fixed w-50 dv-transition shadow-lg h-100 overflow-auto dv-scroll-hidden" id="dv-mobile-nav" data-opened="false">
     <ul class="list-unstyled">
         <li>
             <button class="w-100 p-3 border-0 dv-transition dv-mobile-nav-list-toggler text-white d-inline-flex align-items-center justify-content-between" data-opened="false">
                 <span>صفحه اصلی</span>
                 <span class="dv-transition">+</span>
             </button>
-            <ul class="list-unstyled dv-transition">
+            <ul class="list-unstyled dv-transition dv-mobile-nav-list">
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">صفحه اصلی</button></a></li>
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">صفحه اصلی</button></a></li>
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">صفحه اصلی</button></a></li>
@@ -48,7 +48,7 @@
                 <span>محصولات</span>
                 <span class="dv-transition">+</span>
             </button>
-            <ul class="list-unstyled dv-transition">
+            <ul class="list-unstyled dv-transition dv-mobile-nav-list">
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">محصولات</button></a></li>
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">محصولات</button></a></li>
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">محصولات</button></a></li>
@@ -61,7 +61,7 @@
                 <span>ثبت سفارش</span>
                 <span class="dv-transition">+</span>
             </button>
-            <ul class="list-unstyled dv-transition">
+            <ul class="list-unstyled dv-transition dv-mobile-nav-list">
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">ثبت سفارش</button></a></li>
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">ثبت سفارش</button></a></li>
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">ثبت سفارش</button></a></li>
@@ -74,7 +74,7 @@
                 <span>درباره گروه</span>
                 <span class="dv-transition">+</span>
             </button>
-            <ul class="list-unstyled dv-transition">
+            <ul class="list-unstyled dv-transition dv-mobile-nav-list">
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">درباره گروه</button></a></li>
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">درباره گروه</button></a></li>
                 <li><a href="#"><button class="w-100 dv-transition text-end border-0 text-white p-3">درباره گروه</button></a></li>
@@ -90,7 +90,7 @@
     <header class="fixed-top w-100 p-4 d-inline-flex align-items-center dv-transition" id="dv-header">
         <!--Right Side Of Header Section-->
         <ul class="dv-w-40 d-inline-flex justify-content-between align-items-center list-unstyled m-0">
-            <li class="dv-nav-toggle-btn d-none">
+            <li class="d-none" id="dv-nav-toggle-btn">
                 <button class="rounded-3 p-2 dv-bg-none text-white dv-transition">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -621,5 +621,6 @@
 <script src="assets/base/js/fifth-section-cards.js"></script>
 <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/base/js/header-scripts.js"></script>
+<script src="assets/base/js/mobile-nav.js"></script>
 </body>
 </html>
