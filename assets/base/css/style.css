@@ -35,8 +35,6 @@ button {cursor: pointer;}
 .dv-header-list-item-btn:active {background-color: #006c97 !important;color: white !important;}
 .dv-header-search-btn ~ input {width: 0;}
 #dv-header-search-input::placeholder{color: white;}
-#dv-scroll-icon:hover svg{transform: translateY(5px);}
-.dv-header-search-btn:hover {transform: translateY(5px)}
 #dv-header-search-btn[data-opened='true'] {opacity: 100%;pointer-events: visible;}
 #dv-header-search-btn[data-opened='false'] {opacity: 0;pointer-events: none;}
 #dv-header-search-input[data-opened='true'] {opacity: 100% !important;width: 20% !important;pointer-events: visible !important;}
@@ -45,6 +43,7 @@ button {cursor: pointer;}
 .dv-text-gray {color: #707070 !important;}
 .dv-second-section-card:hover {box-shadow: 0 0 30px rgba(0,0,0,.3);transform: translateY(-5px);}
 .dv-second-section > main {transform: translateY(100px);}
+#dv-scroll-icon:hover svg ,.dv-header-search-btn:hover {animation: hover-transform .7s infinite alternate;}
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
     background-size: cover;
@@ -84,3 +83,6 @@ button {cursor: pointer;}
     background-position: center;
     min-height: 100vh;
 }
+
+/*Animations*/
+@keyframes hover-transform { 100% {transform: translateY(5px)} }
