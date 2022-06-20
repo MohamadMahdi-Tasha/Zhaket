@@ -163,7 +163,7 @@ section:not(.dv-non-rectangle-bg, :first-of-type) {padding: 5rem;}
 @media (max-width: 991px) {
     #dv-mobile-nav, #dv-mobile-nav-dark-bg {display: block !important;}
     #dv-header-search-input[data-opened='true'] {width: 50% !important;}
-    section.dv-non-rectangle-bg {padding: 1rem !important;}
+    section.dv-non-rectangle-bg {padding: 2rem 1rem !important;}
     body > section:nth-of-type(3) {margin-bottom: 13rem !important;}
     header > ul {width: 10% !important;}
     header > div {width: 90% !important;}
