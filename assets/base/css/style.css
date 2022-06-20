@@ -143,6 +143,7 @@ button {cursor: pointer;}
 /*Media Query's*/
 @media (max-width: 1199px) {
     .dv-second-section-images  {grid-template-columns: repeat(2, 1fr);}
+    #products-section  {min-height: 80rem;}
 }
 
 @media (max-width: 991px) {
