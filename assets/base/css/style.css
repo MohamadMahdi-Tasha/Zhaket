@@ -16,6 +16,7 @@ body {
     scroll-behavior: smooth;
     font-weight: normal;
     background-color: #029ecb !important;
+    overflow-x: hidden !important;
 }
 
 /*Styles*/
@@ -157,9 +158,26 @@ button {cursor: pointer;}
     .dv-first-section-inner-gradiant > div:first-of-type{width: 90% !important;}
     .dv-forth-section > main {flex-direction: column-reverse !important;}
     .dv-third-section > main > div, .dv-third-section > main > img,
-    .dv-forth-section > main > div{width: 100% !important;}
+    .dv-forth-section > main > div, .dv-footer > main > div{width: 100% !important;}
+    .dv-footer > main {gap: 2rem;}
+    .dv-footer {min-height: 40rem;background-size: cover}
+    .dv-footer > main > div:last-of-type > ul{width: 75% !important;}
+    .dv-footer > main > div:last-of-type {align-items: start !important;}
     .dv-forth-section > main > img {width: 100%;}
     .dv-forth-section {min-height: 170rem !important;}
+    .dv-footer > main {transform: translateY(70px);}
+    .dv-footer > main > div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
+        gap: 1rem;
+    }
+
+    .dv-footer > main {
+        display: flex;
+        flex-direction: column;
+    }
+
     .dv-third-section > main,
     .dv-forth-section > main{
         display: flex;
