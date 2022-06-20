@@ -55,6 +55,7 @@ button {cursor: pointer;}
 .dv-customer-link-btn:active {background-color: #005f84;}
 .dv-card-swiper .swiper-pagination {transform: translateY(4rem);}
 .dv-card-swiper .swiper-pagination-bullet-active {background: white !important;}
+.dv-footer > main  {transform: translateY(25vh);}
 .dv-card-swiper .swiper-pagination-bullet {
     background: unset;
     border: 3px solid white !important;
@@ -116,10 +117,28 @@ button {cursor: pointer;}
     min-height: 400px;
 }
 
-.dv-footer > main  {
-    transform: translateY(25vh);
-}
-
-
 /*Animations*/
 @keyframes hover-transform { 100% {transform: translateY(5px)} }
+
+/*Media Query's*/
+@media (max-width: 991px) {
+    .dv-first-section-inner-gradiant > div:first-of-type{width: 90% !important;}
+    .dv-rahbari-quote {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .dv-first-section-inner-gradiant > div:first-of-type  > div:first-of-type img {width: 90%;}
+    .dv-first-section-inner-gradiant > div:first-of-type  > div:first-of-type svg {width: 90%;height: auto;}
+    .dv-first-section-inner-gradiant > div:first-of-type  > div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
