@@ -42,7 +42,7 @@ button {cursor: pointer;}
 .dv-text-dark-blue {color: #037FA2 !important;}
 .dv-text-gray {color: #707070 !important;}
 .dv-second-section-card:hover {box-shadow: 0 0 30px rgba(0,0,0,.3);transform: translateY(-5px);}
-.dv-second-section > main {transform: translateY(100px);}
+.dv-bg-none-rectangular > main {transform: translateY(100px);}
 #dv-scroll-icon:hover svg ,.dv-header-search-btn:hover {animation: hover-transform .7s infinite alternate;}
 .dv-first-section {
     background-image: url("../img/first-section/img-bg.png");
