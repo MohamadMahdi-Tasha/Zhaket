@@ -66,13 +66,15 @@ button {cursor: pointer;}
 .dv-text-gray {color: #707070 !important;}
 .dv-second-section-card:hover {box-shadow: 0 0 30px rgba(0,0,0,.3);transform: translateY(-5px);}
 .dv-fourth-sections-ul {grid-template-columns: repeat(2, 1fr);}
-.dv-card-swiper {width: 346px;height: 455px;}
+.dv-card-swiper {width: 346px;}
 .dv-text-blue {color: #0295CE !important;}
 .dv-bg-blue {background-color: #0295CE;}
 .dv-customer-link-btn:hover {background-color: #007aab;}
 .dv-customer-link-btn:active {background-color: #005f84;}
 .dv-card-swiper .swiper-pagination {transform: translateY(4rem);}
 .dv-card-swiper .swiper-pagination-bullet-active {background: white !important;}
+footer.dv-non-rectangle-bg:after {height: 0;}
+footer.dv-non-rectangle-bg:before {height: 30%;}
 .dv-card-swiper .swiper-pagination-bullet {
     background: unset;
     border: 3px solid white !important;
@@ -119,6 +121,32 @@ button {cursor: pointer;}
     box-shadow: 0 0 30px rgba(0,0,0,.1);
 }
 
+section:not(.dv-non-rectangle-bg, :first-of-type) {padding: 5rem;}
+.dv-non-rectangle-bg {
+    background-color: white;
+    position: relative;
+}
+
+.dv-non-rectangle-bg:before, .dv-non-rectangle-bg:after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 10%;
+    background-color: white;
+
+}
+.dv-non-rectangle-bg:before {
+    top: 0;
+    transform: translateY(-100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.dv-non-rectangle-bg:after {
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+    top: 100%;
+}
+
 /*Animations*/
 @keyframes hover-transform { 100% {transform: translateY(5px)} }
 
@@ -130,7 +158,8 @@ button {cursor: pointer;}
 @media (max-width: 991px) {
     #dv-mobile-nav, #dv-mobile-nav-dark-bg {display: block !important;}
     #dv-header-search-input[data-opened='true'] {width: 50% !important;}
-    body > section:not(:first-of-type) {padding: 1rem !important;}
+    section.dv-non-rectangle-bg {padding: 1rem !important;}
+    body > section:nth-of-type(3) {margin-bottom: 13rem !important;}
     header > ul {width: 10% !important;}
     header > div {width: 90% !important;}
     header > ul > li:first-of-type{display: block !important;}
@@ -174,7 +203,6 @@ button {cursor: pointer;}
 
 @media (max-width: 575px) {
     .dv-card-swiper {width: 80%;}
-    .dv-header-search-input[data-opened='false'] {background-color: red;}
     .dv-fourth-sections-ul > li > div {
         display: flex;
         flex-direction: column;
